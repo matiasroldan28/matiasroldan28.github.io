@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/output.css">
+    <link rel="stylesheet" href="../node_modules/swiper/swiper-bundle.css">              
+</head>
+<body>
+     <div class="navbar_test bg-black fixed z-50 flex py-4 pl-8 flex-row justify-between text-xl w-full max-sm:pl-0 max-sm:w-screen max-sm:flex-col">
+        <div class="icon max-sm:flex max-sm:items-center max-sm:justify-center max-sm:size-16>"
+            <a href="#"><img class="max-sm:w-72" src="../assets/img/logo-lider-moto.png" alt="Logo Lidermoto"></a>
+        </div>
+        <ul class="text-white flex flex-row justify-center items-center list-none m-0 max-sm:text-base  ml-7 max-sm:text-center max-sm:w-screen">
+            <li class="nav-item">
+                <a class="nav_link">SUCURSALES</a>
+            </li>
+            <li class="nav-item relative group">
+                <a class="nav_link">MARCAS</a>
+                <ul class="dropdown absolute hidden bg-black text-white py-2 group-hover:block z-50 w-36">
+                    <li><a href="kawasaki.html" class="block px-4 py-2 w-36 hover:bg-gray-800">KAWASAKI</a></li>
+                    <li><a href="#" class="block px-4 py-2 w-36 hover:bg-gray-800">KYMCO</a></li>
+                    <li><a href="#" class="block px-4 py-2 w-36 hover:bg-gray-800">CF MOTO</a></li>
+                    <li><a href="#" class="block px-4 py-2 w-36 hover:bg-gray-800">BAJAJ</a></li>
+                    <li><a href="#" class="block px-4 py-2 w-36 hover:bg-gray-800">ZANELLA</a></li>
+                    <li><a href="#" class="block px-4 py-2 w-36 hover:bg-gray-800">CORVEN</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav_link">POST VENTA</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav_link">REPUESTOS</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Slider main container -->
+    <div class="swiper shadow-lg">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="slide-content">
+            <div class="banner-text">
+                <h1 class="text-6xl max-sm:text-4xl text-red-600">CF 450 SR</h1>
+                <p class="text-5xl max-sm:text-4xl text-white">PLAY TO WIN</p>
+            </div>
+            <img class="banner-dimentions banner-1" src="../assets/img/motos/300nk.png" alt="imagen1">
+            <img class="banner-1-responsive" src="../assets/img/motos/800mt-touring-modelpage-intro.jpg" alt="imagen1">
+            </div> 
+          </div>
+          <div class="swiper-slide">
+            <div class="slide-content">
+            <div class="banner-text">
+                <h1 class="text-6xl max-sm:text-4xl text-yellow-400">CF 650NK</h1>
+                <p class="text-5xl max-sm:text-4xl text-white">PLAY TO WIN</p>
+                <a  href="kawasaki.html" class="btn relative inline-flex items-center justify-start overflow-hidden font-medium transition-all bg-black rounded hover:bg-white group py-1.5 px-2.5">
+                    <span class="w-56 h-48 rounded bg-black absolute bottom-0 left-0 translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
+                    <span class="font-aveny text-2xl relative w-full text-left text-yellow-400 transition-colors duration-300 ease-in-out group-hover:text-white">VER MODELO</span>
+                </a>
+            </div>
+            <img class="banner-dimentions banner-2" src="../assets/img/motos/z400.png" alt="imagen1">
+            <img class="banner-2-responsive" src="../assets/img/motos/650mobile.jpg" alt="imagen1">
+            </div> 
+          </div>
+          <div class="swiper-slide">
+            <div class="slide-content">
+            <div class="banner-text">
+                <h1 class="kawa text-6xl max-sm:text-4xl">KAWASAKI NINJA 400</h1>
+                <p class="text-5xl max-sm:text-4xl text-white">PLAY TO WIN</p>
+            </div>
+            <img class="banner-dimentions banner-3" src="../assets/img/motos/ninja 400.png" alt="imagen1">
+            <img class="banner-3-responsive" src="../assets/img/motos/ninaj400mobile.jpg" alt="imagen1">
+            </div> 
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+    </div>
+    <div class="cta bg-white flex flex-col items-center pt-9">
+        <h1 class="text-center text-2xl font-CustomFont">TU MOTO TE ESTA ESPERANDO, ELEGI TU MARCA</h1>
+        <div class="flex flex-row gap-32 pt-9 justify-center pb-9 max-sm:flex-col">
+            <img class="animate-fade-down size-28 max-sm:size-36" src="../assets/img/marcas-logo/logo-negro-kawasaki.svg" alt="bajaj-logo">
+            <img class="animate-fade-down animate-delay-[150ms] size-28 max-sm:size-36" src="../assets/img/marcas-logo/logo-negro-kymco.svg" alt="bajaj-logo">
+            <img class="animate-fade-down animate-delay-[250ms] size-28 max-sm:size-36" src="../assets/img/marcas-logo/CF-MOTO-OK.png" alt="kymco-logo">
+            <img class="animate-fade-down animate-delay-[350ms] size-28 max-sm:size-36" src="../assets/img/marcas-logo/logo-negro-bajaj.svg" alt="zanella-logo">
+            <img class="animate-fade-down animate-delay-[450ms] size-28 max-sm:size-36" src="../assets/img/marcas-logo/logo-negro-zanella.svg" alt="zanella-logo">
+        </div>
+        <div class="modelos pt-18 text-center shadow-inner bg-slate-100 w-full pb-16">
+            <h1 class="text-slate-950 pt-12 text-2xl">MODELOS DESTACADOS</h1>
+            <div class="grid grid-cols-3 gap-6 mx-80 md:mx-44 pt-12"> 
+                <div class="cuadrado bg-white flex flex-col justify-center items-center text-center">
+                    <img src="../assets/img/render-motos/z900.png" alt="">
+                    <p class="text-xl text-slate-950 font-bold">KAWASAKI Z900</p>
+                </div>
+                <div class="cuadrado bg-white flex flex-col justify-center items-center text-center">
+                    <img  src="../assets/img/render-motos/650nk.webp" alt="">
+                    <p class="text-xl text-slate-950">CF MOTO 650NK</p>
+                </div>
+                <div class="cuadrado bg-white flex flex-col justify-center items-center text-center">
+                    <img  class="object-contain h-48 hover:opacity-80 transition ease-in-out delay-200 hover:scale-110" src="../assets/img/render-motos/d400t.png" alt="">
+                    <p class="text-xl text-slate-950">BAJAJ DOMINAR 400 TOURER</p>
+                </div>
+                <div class="cuadrado bg-white flex flex-col justify-center items-center text-center">
+                    <img  class="object-contain h-48 hover:opacity-80 transition ease-in-out delay-200 hover:scale-110" src="../assets/img/render-motos/kx300r.jpg" alt="">
+                    <p class="text-xl text-slate-950">KAWASAKI KX 300 R</p>
+                </div>
+                <div class="cuadrado bg-white flex flex-col justify-center items-center text-center">
+                    <img  class="object-contain h-48 hover:opacity-80 transition ease-in-out delay-200 hover:scale-110" src="../assets/img/render-motos/klr650endu.png" alt="">
+                    <p class="text-xl text-slate-950">KAWASAKI KLR 650 ENDURISTAN</p>
+                </div>
+                <div class="cuadrado bg-white flex flex-col justify-center items-center text-center">
+                    <img  class="object-contain h-48 hover:opacity-80 transition ease-in-out delay-200 hover:scale-110" src="../assets/img/render-motos/n250.png" alt="">
+                    <p class="text-xl text-slate-950">BAJAJ N250</p>
+                </div>
+            </div>
+    </div>
+    <div id="cta-2" class="cta-2 flex flex-row items-center justify-center gap-4 opacity-0">
+        <div class="imagen">
+            <img src="../assets/img/render-motos/z900-2.png" alt="">
+        </div>
+        <div class="cta-text">
+            <h1 class="text-4xl pb-4 text-center">KAWASAKI Z900</h1>
+            <p class="text-2xl font-semibold text-gray-700">La nueva Kawasaki Z900 llega con emocionantes mejoras para mantenerse como una de las principales opciones en el segmento de motos naked de alto rendimiento. Esta moto combina potencia, agilidad y estilo de una manera excepcional.</p>
+            <div class="text-center pt-8">
+                <a class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded" href="#">VER ESTE MODELO</a>
+            </div>
+        </div>
+    </div>
+    <!-- A REVISAR   
+    <div class=" bg-slate-100 sucursales text-3xl text-center w-full">
+        <h1 class="pt-5 border-t-2 text-white">UBICANOS</h1>
+        <div class="gap-9 flex flex-row items-center justify-center pt-6 pb-6 w-full border-b-2">
+            <img class="max-h-52 border-2 border-red-800" src="../assets/img/sucursales/LIM.png" alt="">
+            <img class="max-h-52 border-2 border-red-800" src="../assets/img/sucursales/MRT.png" alt="">
+            <img class="max-h-52 border-2 border-red-800" src="../assets/img/sucursales/TIG.png" alt="">
+            <img class="max-h-52 border-2 border-red-800" src="../assets/img/sucursales/LPL.png" alt="">
+            <img class="max-h-52 border-2 border-red-800" src="../assets/img/sucursales/QUI.png" alt="">
+            <img class="max-h-52 border-2 border-red-800" src="../assets/img/sucursales/SJU.png" alt="">
+        </div>
+    </div>
+    --> 
+    <!-- Foooter -->
+<section class="footer bg-slate-100 w-full">
+  <div class="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8 w-full">
+      <nav class="flex flex-wrap justify-center -mx-5 -my-2">
+          <div class="px-5 py-2">
+              <a href="#" class="text-base leading-6 text-gray-500 hover:text-gray-900">
+                  Quienes somos
+              </a>
+          </div>
+          <div class="px-5 py-2">
+              <a href="#" class="text-base leading-6 text-gray-500 hover:text-gray-900">
+                  Trabajá con nosotros
+              </a>
+          </div>
+          <div class="px-5 py-2">
+              <a href="#" class="text-base leading-6 text-gray-500 hover:text-gray-900">
+                  Sucursales
+              </a>
+          </div>
+          <div class="px-5 py-2">
+              <a href="#" class="text-base leading-6 text-gray-500 hover:text-gray-900">
+                  Contacto
+              </a>
+          </div>
+      </nav>
+      <div class="flex justify-center mt-8 space-x-6">
+          <a href="#" class="text-gray-400 hover:text-gray-500">
+              <span class="sr-only">Facebook</span>
+              <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
+                  <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd"></path>
+              </svg>
+          </a>
+          <a href="https://www.instagram.com/lidermoto.ok/" class="text-gray-400 hover:text-gray-500">
+              <span class="sr-only">Instagram</span>
+              <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
+                  <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd"></path>
+              </svg>
+          </a>
+      </div>
+      <p class="mt-8 text-base leading-6 text-center text-gray-400">
+          © 2024 SOFAMA S.A. Todos los derechos reservados.
+      </p>
+  </div>
+</section>
+    <script src="../node_modules/swiper/swiper-bundle.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="../js/script.js"></script>       
+</body>
+</html>

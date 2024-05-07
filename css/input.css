@@ -1,0 +1,257 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.menu-hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0s linear 0.3s;
+}
+
+
+
+ion-icon {
+    color: rgb(255, 255, 255);
+  }
+
+@font-face {
+    font-family: 'Aveny';
+    src: url('../assets/fonts/Aveny.ttf') format('truetype');
+  }
+
+@font-face {
+    font-family: 'Druk';
+    src: url('../assets/fonts/DrukWideBold.ttf') format('truetype');
+  }
+
+
+  h1 {
+    font-family: 'Druk', sans-serif;
+}
+
+.navbar_test {
+
+  ul {
+    transition: opacity 0.3s ease;
+  }
+
+    li {
+        font-family: "Aveny";
+        @apply pr-14
+    }
+    
+    .nav-item {
+        .nav_link {
+            text-decoration: none;
+            color: rgb(219, 219, 219);
+            position: relative;
+        }
+
+        .nav_link:hover {
+            color: white;
+            transition: all 0.5s;
+            cursor: pointer;
+        }
+
+        .nav_link::after {
+            content: "";
+            height: 2px;
+            width: 100%;
+            background-color: red;
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            opacity: 0;
+            transition: all 0.2s;
+            pointer-events: none;      
+        }
+
+        .nav_link:hover::after {
+            opacity: 1;
+        }
+    }
+
+}
+
+.swiper {
+
+    width: 100%;   
+    .swiper-button-prev {
+        color: white
+    }
+
+    .swiper-button-next {
+        color: white
+    }
+
+    .banner-dimentions {
+        width: 100%;
+        height: 490px;
+        position: relative;
+
+        @media (min-width: 768px) {
+            height: 390px;
+        }
+    }
+
+    .slide-content {
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        .banner-text {
+            position: absolute;
+            top: 60%; 
+            left: 50%; 
+            transform: translate(-50%, -50%);
+            z-index: 1;
+                    
+            p {
+                font-family: "Aveny T WEB";
+            }
+        }
+        
+        @media (max-width: 640px) {
+            .banner-text {
+                top: 50%;
+                width: 100vw;
+            }
+        }
+    }
+    
+    .slide-content::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0) 100%);
+      }
+
+    .swiper-slide {
+        position: relative;
+
+        .kawa {
+            color: #009C00
+        }
+    }
+
+/* RESPONSIVE WRAPPER */
+
+    /* BANNER 1 */
+
+    @media (max-width: 640px) {
+        .slide-content::after {
+            background: linear-gradient(0deg , rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0) 100%), linear-gradient(180deg , rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0) 100%);        
+        } 
+        
+        .banner-1 {
+          display: none;
+        }
+      
+        .banner-1-responsive {
+          display: block;        
+        }
+
+      }
+      
+      @media (min-width: 641px) {
+        .banner-1-responsive {
+          display: none;
+        }
+      
+        .banner-1 {
+          display: block;
+        }
+      }
+
+      /* BANNER 1 */
+
+      /* BANNER 2 */
+      
+      @media (max-width: 640px) {
+        .banner-2 {
+          display: none;
+        }
+      
+        .banner-2-responsive {
+          display: block;        
+        }
+
+      }
+      
+      @media (min-width: 641px) {
+        .banner-2-responsive {
+          display: none;
+        }
+      
+        .banner-2 {
+          display: block;
+          object-position: cover;
+        }
+      }
+      /* BANNER 2 */
+
+            /* BANNER 3 */
+      
+            @media (max-width: 640px) {
+                .banner-3 {
+                  display: none;
+                }
+              
+                .banner-3-responsive {
+                  display: block;        
+                }
+        
+              }
+              
+              @media (min-width: 641px) {
+                .banner-3-responsive {
+                  display: none;
+                }
+              
+                .banner-3 {
+                  display: block;
+                  object-position: cover;
+                }
+              }
+              /* BANNER 3 */
+/* RESPONSIVE WRAPPER */    
+
+}
+
+.modelos {
+
+    img {
+        @apply object-contain h-72 hover:opacity-90 transition ease-in-out delay-150 hover:scale-105
+    }
+
+    p {
+        font-family: "Aveny";
+        font-weight: 500;
+    }
+}
+
+.cuadrado {
+    box-shadow: -4px -7px 33px -12px rgba(0,0,0,0.51);
+-webkit-box-shadow: -4px -7px 33px -12px rgba(0,0,0,0.51);
+-moz-box-shadow: -4px -7px 33px -12px rgba(0,0,0,0.51);
+
+
+    p {
+        font-weight: 600;
+    }
+}
+
+.sucursales {
+    background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 49%, rgba(8,1,2,1) 100%);
+    
+}
+
+.cta-2 {
+    p {
+        width: 37rem;
+        font-family: "Aveny T WEB";
+    }
+}
